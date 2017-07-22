@@ -1,8 +1,10 @@
-var foodieApp = angular.module('foodieApp',[]);
-console.log(foodieApp);
+			var foodieApp = angular.module('foodieApp',[]);
+			console.log(foodieApp);
 
 
-
+    $('#myCarousel').carousel({
+		pause: 'none'
+	})
 
 //chalo controller bnate hain
 
@@ -17,6 +19,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'Quick Bites',
 	cost: '2200',
 	hours: '12 Noon to 1 AM (Mon-Sun)',
+	votes:'180',
+  	reviews:'200',
+	order:'90mins Rs.20',
 	image: 'https://miami.eat24hours.com/files/cuisines/v4/italian.jpg'
 },
 {
@@ -29,6 +34,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'Desserts',
 	cost: '3200',
 	hours: ' 7–11:30PM (Mon-Sun)',
+	votes:'200',
+  	reviews:'2000',
+	order:'80mins Rs.50',
 	image: 'http://www.pestos.net/images/pestos-food-home.jpg'
 },
 {
@@ -41,6 +49,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'North Indian',
 	cost: '600',
 	hours: ' 11AM–3PM, 6–11PM (Mon-Sun)',
+	votes:'300',
+  	reviews:'250',
+	order:'70mins Rs.20',
 	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
 },
 {
@@ -53,6 +64,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'cafe',
 	cost: '1000',
 	hours: '  11AM–3PM, 6–11PM (Mon-Sun)',
+	votes:'180',
+  	reviews:'500',
+	order:'60mins Rs.30',
 	image: 'http://www.hotelmaniprabha.com/images/restaurant/chat-n-cake-(3).jpg'
 },
 {
@@ -65,6 +79,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'Chinese',
 	cost: '500',
 	hours: '12–3:45PM, 7–11:45PM (Mon-Sun)',
+	votes:'280',
+  	reviews:'600',
+	order:'30mins Rs.200',
 	image: 'https://igx.4sqi.net/img/general/600x600/6091110_pGLCUT9bPgsyZ6uVXU5_-TaGlK20ca0pzYd1Dm8e_F0.jpg'
 },
 {
@@ -77,6 +94,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: ' Italian',
 	cost: '450',
 	hours: '11:30AM–2PM, 5:30–11PM (Mon-Sun)',
+	votes:'590',
+  	reviews:'200',
+	order:'40mins Rs.80',
 	image: 'http://www.oncecall.com/css/s_img_new.php?image=http://www.oncecall.com//images/productimage/piara-sweets-and-resturant-11.jpg&width=425&height=400&zc=4'
 },
 {
@@ -89,6 +109,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'Dutch',
 	cost: '2200',
 	hours: '6–10PM (Mon-Sun)',
+	votes:'170',
+  	reviews:'100',
+	order:'50mins Rs.90',
 	image: 'https://media-cdn.tripadvisor.com/media/photo-s/0e/33/a6/e1/chocolate-mousse-cake.jpg'
 },
 {
@@ -101,6 +124,9 @@ foodieApp.controller('mainController',function($scope) {
 	cuisines: 'Italian',
 	cost: '22000',
 	hours: '12–2:30PM, 7–11PM (Mon-Sun)',
+	votes:'290',
+  	reviews:'380',
+	order:'80mins Rs.200',
 	image: 'https://s-media-cache-ak0.pinimg.com/originals/b9/50/86/b95086c0db742f5437bd53761ee4af65.jpg'
 }]
 })

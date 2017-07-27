@@ -10,7 +10,7 @@ body {
 }
 
 .hero {
-    
+
     background-size: cover;
     min-height: 300px;
     border-radius: 4px;
@@ -121,7 +121,7 @@ body {
     font-size: 16px;
     border-radius: 8px;
     letter-spacing: 1px;
-	
+
 }
 
 
@@ -147,18 +147,18 @@ body {
  	position:absolute;
  	top: 4.3rem;
     right: 1.8rem;
-    color: #89959B;	
+    color: #89959B;
 	left:500px;
-	
-	
+
+
  }
  .restaurant .reviews
  {
   	margin-top:-8px;
-	
+
   }
-  
- .order.nav{ 
+
+ .order.nav{
   	position: relative;
     display: block;
     padding: 10px 24px;
@@ -170,7 +170,9 @@ body {
   	border:2px solid #e7e7e7;
  	text-align: center;
  	font-size:16px;
- 	
+  margin-left:-20px;
+  margin-right:-20px
+
  }
 .call-color
 {
@@ -180,9 +182,9 @@ body {
  .order
  {
    color:#18B927;
-  
+
  }
- 
+
  .divider
  {
  	color:#6D9DD3;
@@ -195,10 +197,10 @@ body {
  	margin-right:17px;
  	margin-top:-10px;
 	margin-left:35px;
-  	
+
   }
 
-  
+
   html,body {
     height:100%;
 	width:100%;
@@ -206,7 +208,7 @@ body {
 }
 #background-carousel{
 	position:absolute;
-	width:100%;
+	width:90%;
 	height:50%;
 	z-index:-1;
 }
@@ -224,7 +226,7 @@ body {
 	background-size:cover;
 	z-index:0;
 }
- 
+
 #content-wrapper {
 	position:absolute;
 	z-index:1 !important;
@@ -234,6 +236,53 @@ body {
 .well {
     opacity:0.85
 }
-  
-  
-  
+
+.ui{
+
+     width:100%;
+     padding:0;
+
+ }
+
+ .zo_logo{
+
+     display:block;
+     height:120px;
+     width:120px;
+ }
+
+ .red{
+
+     background: #cb202d;
+     color: #fff;
+     font-weight: 500;
+     text-align: center;
+     border: none;
+     border-radius: 7px;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ .bestDish .button {
+     display: inline-block;
+     background-color:#cb202d;
+     color: white;
+     padding: 0.4rem 0.5rem;
+     border-radius: 7px;
+     cursor: pointer;
+ }
+
+ #getIngredients-button{
+
+        position: absolute;
+    margin-left: 172px;
+     margin-top: -27px
+ }
+
+ #getIngredients-button2{
+
+       position: absolute;
+       margin-left: 296px;
+         margin-top: -27px;
+ }

@@ -1,3 +1,5 @@
+@import url(vegas.css);
+
 *,
 *:after,
 *:before {
@@ -227,14 +229,31 @@ body {
 	z-index:0;
 }
 
-#content-wrapper {
-	position:absolute;
-	z-index:1 !important;
-	min-width:100%;
-	min-height:100%;
+.banner_animate h2 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #F3EC0B  ;
+    margin: 0;
+    padding: 80px 10px 15px 10px;
+    transform-origin: 50% 100%;
+    text-shadow: 3px 2px 2px #333;
+
+    animation-duration: 8s;
+    animation-name: fade;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
 }
-.well {
-    opacity:0.85
+.banner_animate a {
+    font-family: Cambria, Cochin, serif;
+    font-size: 17px;
+    color: #333;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #A6D2FF;
+    transition: background-color .2s ease-out;
+}
+.banner_animate a:hover {
+    background-color: #EEE;
 }
 
 .ui{
@@ -255,10 +274,10 @@ body {
 
      background: #cb202d;
      color: #fff;
-     font-weight: 500;
+     font-weight: 400;
      text-align: center;
      border: none;
-     border-radius: 7px;
+     border-radius: 4px;
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
@@ -286,3 +305,14 @@ body {
        margin-left: 296px;
          margin-top: -27px;
  }
+
+ @keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}

@@ -266,6 +266,22 @@ if(flag_quit==0){$(".rest-extra").css("background-color", "green");}
 
 })
 
+
+
+$(function(){
+$(".dropdown").hover(
+      function() {
+          $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+          $(this).toggleClass('open');
+          $('b', this).toggleClass("caret caret-up");
+      },
+      function() {
+          $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+          $(this).toggleClass('open');
+          $('b', this).toggleClass("caret caret-up");
+      });
+});
+
 //loginController
 
 foodieApp.controller('loginController',function($scope,$location) {
@@ -278,9 +294,9 @@ foodieApp.controller('loginController',function($scope,$location) {
   //mainController
 
 foodieApp.controller('mainController',function($scope) {
-
-
+//$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
 	$scope.restaurants = [{
+       //restaurant 1 for restaurant.html
 	name: 'Domino Pizza',
 	address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
 	location: 'Connaught Place',
@@ -296,7 +312,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'https://miami.eat24hours.com/files/cuisines/v4/italian.jpg'
 },
 {
-
+               //restaurant 2 for restaurant.html
 	name: 'Gharana',
 	address: ' Sheikh Zayed Road, Al Barsha 1, Dubai, AE - Dubai - United Arab Emirates',
 	location: 'Dubai United Arab Emirates',
@@ -312,7 +328,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'http://www.pestos.net/images/pestos-food-home.jpg'
 },
 {
-
+           //restaurant 3 for restaurant.html
 	name: 'Aromas',
 	address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
 	location: 'London',
@@ -328,7 +344,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
 },
 {
-
+                //restaurant 4 for restaurant.html
 	name: 'Chettinad',
 	address: '16 Percy St, Bloomsbury, London W1T 1DT, UK',
 	location: 'London',
@@ -344,7 +360,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'http://www.hotelmaniprabha.com/images/restaurant/chat-n-cake-(3).jpg'
 },
 {
-
+          //restaurant 5 for restaurant.html
 	name: 'Royal China',
 	address: 'Victoria Terminus, Behind Sterling Cinema Building, Hazarimal Somani Road, Azad Maidan, Fort, Mumbai, Maharashtra 400001',
 	location: 'Mumbai, Maharashtra',
@@ -360,7 +376,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'https://igx.4sqi.net/img/general/600x600/6091110_pGLCUT9bPgsyZ6uVXU5_-TaGlK20ca0pzYd1Dm8e_F0.jpg'
 },
 {
-
+          //restaurant 6 for restaurant.html
 	name: 'Del Posto',
 	address: '85 10th Ave, New York, NY 10011, USA',
 	location: 'Connaught Place',
@@ -376,7 +392,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'http://www.oncecall.com/css/s_img_new.php?image=http://www.oncecall.com//images/productimage/piara-sweets-and-resturant-11.jpg&width=425&height=400&zc=4'
 },
 {
-
+         //restaurant 7 for restaurant.html
 	name: 'De Silveren Spiegel',
 	address: 'Kattengat 4-6, 1012 SZ Amsterdam, Netherlands',
 	location: 'Connaught Place',
@@ -392,7 +408,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'https://media-cdn.tripadvisor.com/media/photo-s/0e/33/a6/e1/chocolate-mousse-cake.jpg'
 },
 {
-
+      //restaurant 8 for restaurant.html
 	name: 'La Piazza',
 	address: ' First Floor, Hyatt Regency, Ring Road, Bhikaiji Cama Place, Near Fire Station,, New Delhi, Delhi 110066',
 	location: 'Hyatt Regency Delhi',

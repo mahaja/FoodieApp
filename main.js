@@ -3,11 +3,6 @@ var foodieApp = angular.module('foodieApp',['ngRoute']);
 
 
 
-      $('#myCarousel').carousel({
-      pause: 'none'
-      })
-
-
 
 foodieApp.config(function ($routeProvider) {  //pass function as parameter
  $routeProvider
@@ -294,6 +289,11 @@ foodieApp.controller('loginController',function($scope,$location) {
   //mainController
 
 foodieApp.controller('mainController',function($scope) {
+
+  $('#myCarousel').carousel({
+  pause: 'none'
+  })
+
 //$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
 	$scope.restaurants = [{
        //restaurant 1 for restaurant.html
@@ -312,6 +312,7 @@ foodieApp.controller('mainController',function($scope) {
 	image: 'https://miami.eat24hours.com/files/cuisines/v4/italian.jpg'
 },
 {
+
                //restaurant 2 for restaurant.html
 	name: 'Gharana',
 	address: ' Sheikh Zayed Road, Al Barsha 1, Dubai, AE - Dubai - United Arab Emirates',
